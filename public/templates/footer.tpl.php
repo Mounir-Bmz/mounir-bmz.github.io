@@ -1,5 +1,5 @@
 <footer>
-    <p>&copy; 2023 Mon Portfolio. Tous droits réservés.</p>
+    <p class="text-center">&copy; 2023 Mon Portfolio. Tous droits réservés.</p>
 </footer>
 
 <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
