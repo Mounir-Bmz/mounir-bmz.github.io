@@ -1,5 +1,6 @@
-<?php include 'public/templates/header.tpl.php'; ?>
-
+<?php 
+  include("./public/templates/header.tpl.php"); 
+?>
 <body>
   <main aria-label="Content" class="mt-4 mb-4">
     <div class="container">
@@ -23,7 +24,7 @@
     </div>
   </main>
 </body>
-
-<?php include 'public/templates/footer.tpl.php'; ?>
-
+<?php 
+  include("./public/templates/footer.tpl.php"); 
+?>
 </html>
