@@ -6,3 +6,10 @@
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
 <script src="./public/assets/js/main.js"></script>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function(event) {
+      alert("Portfolio In Progress !");
+      console.log("Portfolio In Progress !");
+    });
+</script>
