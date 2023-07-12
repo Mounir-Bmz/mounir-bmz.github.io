@@ -1,0 +1,59 @@
+h1{
+    font-weight: bold;
+}
+
+a.btn:hover , .nav-link:hover {
+    text-decoration: underline;
+}
+
+header {
+    color: chartreuse;
+    border-bottom: 2px solid rgb(61, 61, 61);
+}
+
+.img-fluid {
+    max-width: 50%;
+    width: 60vw;
+}
+
+.justify-content-sm-center a.btn {
+    width: 40%;
+}
+
+/* Taille Mounir Boumaza */
+
+@media (max-width: 767px) {
+
+    /* Styles pour téléphone */
+    div.containerMounir h1 {
+        font-size: 1.5rem;
+    }
+
+    a.btn {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+
+    /* Styles pour tablette */
+    div.containerMounir h1 {
+        font-size: 1.8rem;
+    }
+
+    a.btn {
+        font-size: 1rem;
+    }
+}
+
+@media (min-width: 1024px) {
+
+    /* Styles pour PC */
+    div.containerMounir h1 {
+        font-size: 2.2rem;
+    }
+
+    a.btn {
+        font-size: 1.3rem;
+    }
+}
