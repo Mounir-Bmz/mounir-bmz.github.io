@@ -4,17 +4,18 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mon Portfolio</title>
+  <title>Mon CV</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-  <link rel="stylesheet" href="./public/assets/css/styles.css">
+  <link rel="stylesheet" href="../assets/css/styles.css">
 </head>
 
 <header>
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container-fluid d-flex justify-content-center align-items-center">
       <h1 class="navbar-brand mr-auto my-2"><a href="#accueil" class="text-dark">Mounir Boumaza</a></h1>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
@@ -23,7 +24,7 @@
             <a class="nav-link" href="../../index.html">Accueil</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="https://github.com/Mounir-Bmz?tab=repositories" target="_blank" >Projets</a>
+            <a class="nav-link" href="https://github.com/Mounir-Bmz?tab=repositories" target="_blank">Projets</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./resume.html">À propos</a>
@@ -37,12 +38,220 @@
   </nav>
 </header>
 
-<body>
-  <main aria-label="Content" class="mt-4 mb-4">
-    <div class="container">
-      BONJOUR
+<body class="body-resume">
+  <div class="container container-resume mx-auto">
+    <div class="row">
+
+      <!--/ Header /-->
+      <div class="row main-title">
+        <div class="col-md-4 p-3 bloc01 d-flex align-items-center justify-content-center">
+          <div class="main-title_left text-center">
+            <img class="main-title_profilpic img-fluid" src="../assets/images/560x560.png"
+              alt="Photo_de_profil_Mounir_Boumaza" />
+            <h1 class="main-title_name">Mounir Boumaza</h1>
+          </div>
+        </div>
+        <div class="col-md-8 p-3 bloc02 d-flex align-items-center justify-content-center">
+          <div class="main-title_right text-center">
+            <h1 class="main-title_jobname">Développeur Web - Front-End</h1>
+            <p class="main-details">
+              <strong>
+                Spécialisé React - Collaboration d’équipe
+                - Maîtrise des langages web - Résolution
+                de problèmes - Adaptabilité technologique - Qualité du code <br>
+                <br>
+                Créativité - Esprit d’analyse - Réactivité -
+                Sensibilité UX/UI - Anglais courant (C1)
+              </strong>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!---------- Left Section ---------->
+
+      <div class="col-md-4 main-left">
+        <!-- / Contact et info profil / -->
+        <section class="main-section_profil_info">
+          <ul class="main-section_list_infos">
+            <li class="section-list_item">
+              <div class="section-list_icon-bubble">
+                <i class="fas fa-envelope"></i>
+              </div>
+              <div class="section-list_text info-mail">mboumaza.mounir@gmail.com</div>
+            </li>
+            <li class="section-list_item">
+              <div class="section-list_icon-bubble">
+                <i class="fas fa-home"></i>
+              </div>
+              <div class="section-list_text">Paris</div>
+            </li>
+            <li class="section-list_item">
+              <div class="section-list_icon-bubble">
+                <i class="fas fa-globe"></i>
+              </div>
+              <div class="section-list_text">Français</div>
+            </li>
+            <li class="section-list_item">
+              <div class="section-list_icon-bubble">
+                <i class="fas fa-briefcase"></i>
+              </div>
+              <div class="section-list_text">Présentiel et télétravail</div>
+            </li>
+            <li class="section-list_item">
+              <div class="section-list_icon-bubble">
+                <i class="fas fa-phone"></i>
+              </div>
+              <div class="section-list_text">06 20 52 27 88</div>
+            </li>
+            <li class="section-list_item">
+              <div class="section-list_icon-bubble">
+                <i class="fab fa-linkedin"></i>
+              </div>
+              <div class="section-list_text">
+                <a href="https://www.linkedin.com/in/mounir-boumaza/" target="_blank">LinkedIn</a>
+              </div>
+            </li>
+            <li class="section-list_item">
+              <div class="section-list_icon-bubble">
+                <i class="fab fa-github"></i>
+              </div>
+              <div class="section-list_text">
+                <a href="https://github.com/Mounir-Bmz" target="_blank">GitHub</a>
+              </div>
+            </li>
+          </ul>
+        </section>
+
+        <!-- / Soft Skills / -->
+
+        <section class="main-section_left">
+          <h2 class="main-section_title_left">Soft Skills</h2>
+          <h3 class="main-section_text">Travail d'équipe</h3>
+          <ul class="main-section_list">
+            <li class="section-list_item">Sens de l'organisation et autonomie</li>
+          </ul>
+          <h3 class="main-section_text">Créatif</h3>
+          <ul class="main-section_list">
+            <li class="section-list_item">Accompagnement aux changements et aux nouveautés</li>
+          </ul>
+          <h3 class="main-section_text">Social</h3>
+          <ul class="main-section_list">
+            <li class="section-list_item">Communication régulière avec des clients francophones et anglophones</li>
+          </ul>
+        </section>
+
+        <!-- / Loisirs / -->
+
+        <section class="main-section_left">
+          <h2 class="main-section_title_left">Loisirs</h2>
+          <div class="main-section_loisirs">
+            <img class="section-list_icon" src="../images/icons/music.png" alt="icon_music" />
+            <h3 class="main-section_text_loisirs">Production musicale</h3>
+          </div>
+          <div class="main-section_loisirs">
+            <img class="section-list_icon" src="../images/icons/sport.png" alt="icon_sport" />
+            <h3 class="main-section_text_loisirs">Footing et skateboard</h3>
+          </div>
+        </section>
+
+        <!-- / Langues / -->
+
+        <section class="main-section_left">
+          <h2 class="main-section_title_left">Langues</h2>
+          <ul class="main-section_list">
+            <li class="section-list_item_lang">Anglais (C1)</li>
+          </ul>
+          <ul class="main-section_list">
+            <li class="section-list_item_lang">Espagnol : notions de base</li>
+          </ul>
+        </section>
+
+      </div>
+
+      <!---------- Right Section ---------->
+
+      <div class="col-md-8 main-right">
+
+        <!-- / Expériences / -->
+
+        <section class="main-section">
+          <h2 class="main-section_title">Expériences</h2>
+          <h3 class="main-section_text_job">Développeur Web - O'clock</h3>
+          <div class="main-section_date_location">
+            <em class="section-text_firm">O'clock</em>
+            <span class="section-text_text">- Mars 2023 à Août 2023 -</span>
+            <p class="section-text_text">Projet de fin d'études en équipe de 4 développeurs. Développement Front-End
+              d'une application web en méthodologie agile (4 sprints).</p>
+          </div>
+          <ul class="main-section_list">
+            <li class="section-list_item">Technologies utilisées : HTML, CSS, JavaScript, React</li>
+          </ul>
+          <h3 class="main-section_text_job">Auto-entrepreneur - Animateur</h3>
+          <div class="main-section_date_location">
+            <em class="section-text_firm">Auto-entrepreneur</em>
+            <span class="section-text_text">- Mai 2021 à Octobre 2022 -</span>
+            <p class="section-text_text">Travail sur des projets d'animation 2D et 3D, montage vidéo et création
+              d'animations pour divers clients.</p>
+          </div>
+          <ul class="main-section_list">
+            <li class="section-list_item">Logiciels utilisés : Maya, Blender, Photoshop, After Effects</li>
+          </ul>
+          <h3 class="main-section_text_job">Animateur 3D - Back Market</h3>
+          <div class="main-section_date_location">
+            <em class="section-text_firm">Prodigious pour Back Market</em>
+            <span class="section-text_text">- Réalisation d'une animation pour un spot TV -</span>
+          </div>
+          <h3 class="main-section_text_job">Animateur 3D - Prime Video "Invincible"</h3>
+          <div class="main-section_date_location">
+            <em class="section-text_firm">Prime Video</em>
+            <span class="section-text_text">- Réalisation d'animations pour la série "Invincible" -</span>
+          </div>
+        </section>
+
+        <!-- / Diplômes et Formations / -->
+
+        <section class="main-section">
+          <h2 class="main-section_title">Diplômes et Formations</h2>
+          <h3 class="main-section_text">Titre Professionnel Développeur Web et Web Mobile - Niveau 5</h3>
+          <div class="main-section_date_location">
+            <em class="section-text_firm">O'clock - Labellisée Grande École du Numérique</em>
+            <span class="section-text_text">- Mars 2023 à Septembre 2023 -</span>
+            <p class="section-text_text">Formation intensive de 700 heures en développement web et web mobile.</p>
+          </div>
+          <h3 class="main-section_text">Mastère Réalisation et Animation 3D - Niveau 7</h3>
+          <div class="main-section_date_location">
+            <em class="section-text_firm">IIM - Institut de l'Internet et du Multimédia</em>
+            <span class="section-text_text">- 2022 -</span>
+            <p class="section-text_text">Formation spécialisée en réalisation et animation 3D.</p>
+          </div>
+        </section>
+
+        <!-- / Compétences et Expertise / -->
+
+        <section class="main-section">
+          <h2 class="main-section_title">Compétences et Expertise</h2>
+          <h3 class="main-section_text">Développement et intégration web</h3>
+          <ul class="main-section_list">
+            <li class="section-list_item">HTML5, CSS3, SCSS (W3C, RGAA)</li>
+          </ul>
+          <h3 class="main-section_text">Développement Front-End</h3>
+          <ul class="main-section_list">
+            <li class="section-list_item">ReactJS, JavaScript Vanilla, Redux</li>
+          </ul>
+          <h3 class="main-section_text">Développement Back-End</h3>
+          <ul class="main-section_list">
+            <li class="section-list_item">Node.js, PHP orienté objet, MVC, API REST, MySQL</li>
+          </ul>
+          <h3 class="main-section_text">Compétences supplémentaires</h3>
+          <ul class="main-section_list">
+            <li class="section-list_item">Animation 3D/2D, Montage vidéo, Adobe Photoshop, Adobe Illustrator</li>
+          </ul>
+        </section>
+      </div>
+
     </div>
-  </main>
+  </div>
 </body>
 
 <footer>

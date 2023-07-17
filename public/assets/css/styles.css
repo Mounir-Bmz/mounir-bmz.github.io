@@ -1,8 +1,9 @@
-h1{
+h1 {
     font-weight: bold;
 }
 
-a.btn:hover , .nav-link:hover {
+a.btn:hover,
+.nav-link:hover {
     text-decoration: underline;
 }
 
@@ -15,8 +16,9 @@ footer {
     border-top: 1px solid rgb(238, 238, 238);
 }
 
-p, footer ul {
-    margin-top: 1rem!important;
+p,
+footer ul {
+    margin-top: 1rem !important;
 }
 
 .img-fluid {
@@ -28,11 +30,12 @@ p, footer ul {
     width: 40%;
 }
 
-html, footer{
+html,
+footer {
     background-color: #f8f9fa;
 }
 
-/* Taille Mounir Boumaza */
+/* Taille Mounir Boumaza Accueil*/
 
 @media (max-width: 767px) {
 
@@ -46,7 +49,7 @@ html, footer{
     }
 }
 
-@media (min-width: 768px) and (max-width: 1023px) {
+@media (min-width: 768px) and (max-width: 991px) {
 
     /* Styles pour tablette */
     div.containerMounir h1 {
@@ -58,7 +61,7 @@ html, footer{
     }
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 992px) {
 
     /* Styles pour PC */
     div.containerMounir h1 {
@@ -68,4 +71,146 @@ html, footer{
     a.btn {
         font-size: 1.3rem;
     }
+}
+
+/* RESUME */
+
+.main-section_profil_info,
+.main-section_left {
+    padding: 1.1em;
+}
+
+.main-section_profil_info {
+    background-color: #ced4e6;
+}
+
+.main-left {
+    background-color: #d5dcee;
+    padding: 0;
+}
+
+.main-right {}
+
+.row {
+    margin: 0;
+}
+
+.main-title {
+    background-color: #9CABCB;
+}
+
+.container-resume {
+    background-color: white;
+    padding: 0;
+    margin: 5%;
+}
+
+.body-resume {
+    background-color: #cacaca;
+}
+
+/* Taille Mounir Boumaza Resume*/
+
+.main-title_name,
+.main-title_profilpic {
+    margin: 0.3em;
+}
+
+@media (max-width: 767px) {
+
+    /* Styles pour téléphone */
+    .main-title_name {
+        font-size: 2rem;
+        text-decoration: underline;
+    }
+
+    .main-title_jobname {
+        font-size: 1.8rem;
+    }
+
+    .bloc01 {
+        padding-bottom: 0 !important;
+    }
+
+    .bloc02 {
+        margin-left: 1.3%;
+        margin-right: 1.3%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    /* Styles pour tablette */
+    .main-title_name {
+        font-size: 1.4rem;
+    }
+
+    .main-title_jobname {
+        font-size: 1.5rem;
+    }
+}
+
+@media (min-width: 992px) {
+
+    /* Styles pour PC */
+    .main-title_name {
+        font-size: 2rem;
+    }
+
+    .main-title_jobname {
+        font-size: 2rem;
+        text-transform: uppercase;
+        margin-bottom: 1.3rem;
+    }
+
+    .main-details {
+        margin-bottom: 0;
+    }
+}
+
+/* Contact et info profil */
+
+.section-list_icon-bubble {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    margin-right: 10px;
+}
+
+.section-list_icon-bubble i {
+    color: #333;
+}
+
+.main-section_list_infos {
+    list-style-type: none;
+    padding-left: 0;
+    margin-bottom: 0;
+}
+
+.section-list_item {
+    display: flex;
+    align-items: center;
+    margin-top: 0.5em;
+}
+
+@media (max-width: 767px) {
+    /* Styles pour téléphone */
+    .section-list_item{
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    /* Styles pour tablette */
+    .info-mail{
+        font-size: 0.73rem;
+    }
+}
+
+@media (min-width: 992px) {
+    /* Styles pour PC */
 }
