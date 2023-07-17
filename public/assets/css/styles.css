@@ -1,3 +1,13 @@
+#cv a {
+    display: inline-block;
+    padding: 0.7rem;
+    margin: 0rem 1rem;
+    background-color: #333;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
 h1 {
     font-weight: bold;
 }
@@ -19,6 +29,11 @@ footer {
 p,
 footer ul {
     margin-top: 1rem !important;
+}
+
+footer a {
+    color: #333;
+    text-decoration: none;
 }
 
 .img-fluid {
@@ -73,6 +88,14 @@ footer {
     }
 }
 
+/* MA BIO */
+
+.container-bio {
+    padding: 0;
+    margin-top: 2em;
+    background-color: white;
+}
+
 /* RESUME */
 
 .main-section_profil_info,
@@ -88,8 +111,6 @@ footer {
     background-color: #d5dcee;
     padding: 0;
 }
-
-.main-right {}
 
 .row {
     margin: 0;
@@ -142,7 +163,7 @@ footer {
 
     /* Styles pour tablette */
     .main-title_name {
-        font-size: 1.4rem;
+        font-size: 1.22rem;
     }
 
     .main-title_jobname {
@@ -154,7 +175,7 @@ footer {
 
     /* Styles pour PC */
     .main-title_name {
-        font-size: 2rem;
+        font-size: 1.6rem;
     }
 
     .main-title_jobname {
@@ -198,19 +219,42 @@ footer {
 }
 
 @media (max-width: 767px) {
+
     /* Styles pour téléphone */
-    .section-list_item{
+    .section-list_item {
         font-size: 0.8rem;
     }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
+
     /* Styles pour tablette */
-    .info-mail{
+    .info-mail {
         font-size: 0.73rem;
     }
 }
 
 @media (min-width: 992px) {
     /* Styles pour PC */
+}
+
+/* COMPÉTENCES ET EXPERTISE */
+
+.main-comp {
+    padding: 1rem;
+}
+
+.main-comp h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 1rem;
+    margin-top: 0;
+    color: #24365e;
+}
+
+.main-comp h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1.2rem 0.6rem;
+    color: #4d659b;
 }
