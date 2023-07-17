@@ -7,7 +7,16 @@ a.btn:hover , .nav-link:hover {
 }
 
 header {
-    border-bottom: 2px solid rgb(61, 61, 61);
+    border-bottom: 1px solid rgb(223, 223, 223);
+}
+
+footer {
+    margin: auto;
+    border-top: 1px solid rgb(238, 238, 238);
+}
+
+p, footer ul {
+    margin-top: 1rem!important;
 }
 
 .img-fluid {
@@ -17,6 +26,10 @@ header {
 
 .justify-content-sm-center a.btn {
     width: 40%;
+}
+
+html, footer{
+    background-color: #f8f9fa;
 }
 
 /* Taille Mounir Boumaza */
