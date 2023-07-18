@@ -4,4 +4,5 @@ Je suis Mounir Boumaza, et en tant que développeur passionné, j’adore travai
 
 ### Dans ce repo se trouve mon Portfolio! Enjoy! ✨
 
-<a href="https://mounir-bmz.github.io/" target="_blank">https://mounir-bmz.github.io/</a>
+[https://mounir-bmz.github.io/](https://mounir-bmz.github.io/)
+
