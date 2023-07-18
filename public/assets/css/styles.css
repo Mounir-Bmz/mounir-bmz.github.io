@@ -258,3 +258,66 @@ footer {
     margin: 1.2rem 0.6rem;
     color: #4d659b;
 }
+
+/* Soft Skills */
+
+.main-section_left {
+    padding: 1rem;
+}
+
+.main-section_left h2 {
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin: 1rem;
+    margin-top: 0;
+    color: #24365e;
+}
+
+.main-section_left h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 1.2rem 0.6rem;
+    color: #4d659b;
+}
+
+/* Loisirs */
+
+.main-section_loisirs {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+
+  .section-list_icon-centered {
+    width: 3rem;
+    height: 3rem;
+    border-radius: 50%;
+    background-color: #f0f0f0;
+    margin-right: 0;
+    margin-bottom: 0.44rem;
+  }
+
+  .section-list_icon-centered i {
+    color: #122a96;
+    font-size: 1.7rem;
+  }
+  
+  .main-section_text_loisirs {
+    font-size: 1rem;
+    color: #30b316b4;
+    font-weight: bold;
+  }
+
+  .main-section_loisirs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+  }
+  
+  .row-loisir {
+    display: flex;
+    justify-content: center;
+  }
+  
+  
