@@ -430,3 +430,26 @@ footer {
         text-align: left;
     }
 }
+
+/* DARK MODE */
+body {
+    background-color: white;
+    color: #212529;
+}
+
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+}
+
+.BG,
+.BG a {
+    background-color: #F8F9FA;
+    color: #333;
+}
+
+.BG.dark-mode,
+.BG.dark-mode a {
+    background-color: #1d1d1d;
+    color: #fff;
+}
