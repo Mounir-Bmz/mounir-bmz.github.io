@@ -2,7 +2,7 @@
 function scrollToTop() {
     window.scrollTo({
       top: 0,
-      behavior: 'smooth' // Pour une animation douce du défilement
+      behavior: 'smooth'
     });
   }
   

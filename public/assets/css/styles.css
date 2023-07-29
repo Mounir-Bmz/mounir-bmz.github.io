@@ -454,6 +454,10 @@ body.dark-mode {
     color: #fff;
 }
 
+#darkModeButton{
+    margin: 1rem;
+}
+
 /* NAV BAR FIX */
 
 .navbar.sticky {
