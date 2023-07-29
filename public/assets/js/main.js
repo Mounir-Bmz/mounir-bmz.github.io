@@ -2,6 +2,7 @@
 const darkModeButton = document.getElementById('darkModeButton');
 const navElement = document.querySelector("nav.BG");
 const footerElement = document.querySelector("footer.BG");
+const faSymbol = document.querySelector(".faSymbol");
 
 // Fonction mode sombre
 function enableDarkMode() {
@@ -12,6 +13,8 @@ function enableDarkMode() {
   navElement.classList.remove('navbar-light');
   navElement.classList.add('navbar-dark');
   
+  faSymbol.classList.remove('fa-moon');
+  faSymbol.classList.add('fa-sun');
 
   // On change l'image en dark
   const avatarImage = document.querySelector('.img-fluid');
@@ -26,6 +29,9 @@ function disableDarkMode() {
 
   navElement.classList.remove('navbar-dark');
   navElement.classList.add('navbar-light');
+
+  faSymbol.classList.remove('fa-sun');
+  faSymbol.classList.add('fa-moon');
 
   // On change l'image en light
   const avatarImage = document.querySelector('.img-fluid');
