@@ -1,0 +1,14 @@
+// Fonction pour gérer le style du main lors du défilement
+function handleStickyMain() {
+    const mainElement = document.querySelector('.mainContent');
+  
+    if (window.scrollY > 0) {
+        mainElement.classList.remove('sticky-navbar');
+    } else {
+        mainElement.classList.add('sticky-navbar');
+    }
+  }
+  
+  // Ecoute du défilement de la page
+  window.addEventListener('scroll', handleStickyMain);
+  

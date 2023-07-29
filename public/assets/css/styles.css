@@ -453,3 +453,21 @@ body.dark-mode {
     background-color: #1d1d1d;
     color: #fff;
 }
+
+/* NAV BAR FIX */
+
+.navbar.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+/* sticky-navbar */
+/* .mainContent.sticky-navbar {
+    margin-top: 8rem!important;
+  } */
+
+.mainContent{
+    margin-top: 5rem;
+}
