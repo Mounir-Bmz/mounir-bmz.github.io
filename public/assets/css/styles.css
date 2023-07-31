@@ -445,10 +445,27 @@ body.dark-mode {
     color: #fff;
 }
 
+.item-project{
+    background-color: white;
+    color: #212529;
+}
+
+.item-project.dark-mode {
+    background-color: #616161;
+    color: #fff;
+}
+
+#projects{
+    background-color: #EBEBEB;
+}
+
+#projects.dark-mode {
+    background-color: #414141;
+}
+
 .BG a {
     color: #333;
 }
-
 
 .BG.dark-mode a {
     color: #fff;
@@ -456,6 +473,7 @@ body.dark-mode {
 
 .BG {
     background-color: rgba(248, 249, 250, 0.4);
+    padding: 0 0.5rem;
 }
 
 .BG.dark-mode {
@@ -464,7 +482,8 @@ body.dark-mode {
 
 
 #darkModeButton {
-    margin: 1rem;
+    margin: 0 1rem;
+    padding: 0.2rem 0.4rem;
 }
 
 /* NAV BAR FIX */
@@ -521,7 +540,6 @@ body.dark-mode {
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
-    min-height: 100vh;
 }
 
 #about {
@@ -531,15 +549,22 @@ body.dark-mode {
     align-items: center;
 }
 
+#projects{
+    min-height: 100vh;
+}
+
 .img-container {
     position: relative;
     display: inline-block;
 }
 
 .infos,
-.img-container,
-.container-about {
+.img-container {
     margin: 1rem;
+}
+
+.container-about {
+    margin-top: 3rem;
 }
 
 .img-overlay {
@@ -554,11 +579,15 @@ body.dark-mode {
     opacity: 1;
 }
 
+.lead {
+    text-decoration: underline;
+}
+
 /* SKILLS-BOX */
 
 .skill-box i{
     display: block;
-    font-size: 4rem;
+    font-size: 3rem;
     margin-bottom: 1rem;
 }
 
@@ -599,7 +628,7 @@ body.dark-mode {
 }
 
 .box2{
-    font-size: 1.1rem;
+    font-size: 0.9rem;
 }
 
 @media (max-width: 991px) {
@@ -613,7 +642,7 @@ body.dark-mode {
 
     .box2 {
         width: 100%;
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
 
     .box3 {
@@ -645,3 +674,22 @@ body.dark-mode {
 .box-btn a{
     margin: 1.3rem;
 }
+
+.main-infos{
+    margin-top: 1.8rem;
+}
+
+/* Réalisations en ligne */
+
+.item-project{
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.overlay {
+    max-height: 33vh; 
+    overflow-y: auto; 
+  }
