@@ -554,6 +554,44 @@ body.dark-mode {
     opacity: 1;
 }
 
+/* SKILLS-BOX */
+
+.skill-box i{
+    display: block;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.skills{
+    margin-top: 5rem;
+}
+
+@media (max-width: 767px) {
+    .skill-box i{
+        font-size: 2rem;
+    }
+}
+
+.item-bleu:hover{
+    color: rgb(0, 102, 255);
+}
+
+.item-violet:hover{
+    color: rgb(74, 6, 119);
+}
+
+.item-orange:hover{
+    color: orange;
+}
+
+.item-vert:hover{
+    color: rgb(0, 173, 0);
+}
+
+.item-jaune:hover{
+    color: rgb(255, 251, 0);
+}
+
 /* ABOUT SUR TEL */
 
 .box3, .infos-box3 {
@@ -602,4 +640,8 @@ body.dark-mode {
 
 .box2 h2{
     margin-bottom: 1.5rem;
+}
+
+.box-btn a{
+    margin: 1.3rem;
 }
