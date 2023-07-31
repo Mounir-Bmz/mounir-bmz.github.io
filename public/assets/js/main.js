@@ -49,3 +49,27 @@ function toggleDarkMode() {
 
 // Ecoute du bouton
 darkModeButton.addEventListener('click', toggleDarkMode);
+
+
+// ABOUT CHANGEMENT TEL
+
+window.addEventListener('DOMContentLoaded', function () {
+  function updateBox2Class() {
+    const box2 = document.querySelector('.box2');
+    if (window.innerWidth <= 991) {
+      box2.classList.remove('col-8');
+      box2.classList.add('col-12');
+    } else {
+      box2.classList.remove('col-12');
+      box2.classList.add('col-8');
+    }
+  }
+
+  // Au chargement initial de la page
+  updateBox2Class();
+
+  // Écouteur d'événement pour redimensionner la fenêtre
+  window.addEventListener('resize', function () {
+    updateBox2Class();
+  });
+});

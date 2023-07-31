@@ -47,9 +47,8 @@ footer a,
     text-decoration: none;
 }
 
-.img-fluid {
+.col-md-6 {
     max-width: 50%;
-    width: 60vw;
 }
 
 .justify-content-sm-center a.btn {
@@ -59,6 +58,10 @@ footer a,
 html,
 footer {
     background-color: #f8f9fa;
+}
+
+html{
+    scroll-behavior: smooth;
 }
 
 /* Taille Mounir Boumaza Accueil*/
@@ -442,19 +445,25 @@ body.dark-mode {
     color: #fff;
 }
 
-.BG,
 .BG a {
-    background-color: #F8F9FA;
     color: #333;
 }
 
-.BG.dark-mode,
+
 .BG.dark-mode a {
-    background-color: #1d1d1d;
     color: #fff;
 }
 
-#darkModeButton{
+.BG {
+    background-color: rgba(248, 249, 250, 0.4);
+}
+
+.BG.dark-mode {
+    background-color: rgba(29, 29, 29, 0.4);
+}
+
+
+#darkModeButton {
     margin: 1rem;
 }
 
@@ -465,10 +474,6 @@ body.dark-mode {
     top: 0;
     width: 100%;
     z-index: 100;
-}
-
-.mainContent {
-    margin-top: 5rem;
 }
 
 /* BOUTON UP */
@@ -503,4 +508,98 @@ body.dark-mode {
         justify-content: center;
         /* background-color: #ff0000; */
     }
+}
+
+/* DEFILEMENT UPDATE HOME */
+
+#home {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/BG_PC_TEST.jpg");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    min-height: 100vh;
+}
+
+#about {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-container {
+    position: relative;
+    display: inline-block;
+}
+
+.infos,
+.img-container,
+.container-about {
+    margin: 1rem;
+}
+
+.img-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.img-container:hover .img-overlay {
+    opacity: 1;
+}
+
+/* ABOUT SUR TEL */
+
+.box3, .infos-box3 {
+    display: none;
+}
+
+.box2{
+    font-size: 1.1rem;
+}
+
+@media (max-width: 991px) {
+    .main-infos {
+        flex-wrap: wrap;
+    }
+
+    .box1 {
+        display: none;
+    }
+
+    .box2 {
+        width: 100%;
+        font-size: 0.8rem;
+    }
+
+    .box3 {
+        display: block;
+        float: left;
+        width: 30%;
+    }
+
+    .infos-box3{
+        display: block;
+    }
+
+    .box-btn button{
+        font-size: 0.9rem;
+        padding: 0.4rem;
+    }
+}
+
+.infos-box3 dt,
+.infos-box3 dd {
+  display: inline;
+  margin: 0;
+}
+
+.box2 h2{
+    margin-bottom: 1.5rem;
 }
