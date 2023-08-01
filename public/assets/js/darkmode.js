@@ -35,7 +35,7 @@ function enableDarkMode() {
     image.src = './public/assets/images/Dark_560x560.png';
   });
   profilImages.forEach(image => {
-    image.src = './public/assets/images/Dark_Mounir_560x560_v02.png';
+    image.src = './public/assets/images/Light_Mounir_560x560_v02.png'; // Pour l'instant, je change pas l'image en dark
   });
 
 }
