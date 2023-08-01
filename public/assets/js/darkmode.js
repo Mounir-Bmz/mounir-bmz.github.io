@@ -7,12 +7,15 @@ const faSymbol = document.querySelector(".faSymbol");
 const cardos = document.querySelectorAll(".item-project");
 const bgProjects = document.querySelector("#projects");
 
-const avatarImage = document.querySelector('.img-fluid');
-const profilImage = document.querySelector('.img-overlay');
+const avatarImages = document.querySelectorAll('.img-fluid');
+const profilImages = document.querySelectorAll('.img-overlay');
 
 // Fonction mode sombre
 function enableDarkMode() {
   document.body.classList.add('dark-mode');
+
+  document.querySelector("#home").classList.add('dark-mode');
+
   navElement.classList.add('dark-mode');
   footerElement.classList.add('dark-mode');
   bgProjects.classList.add('dark-mode');
@@ -28,8 +31,13 @@ function enableDarkMode() {
   faSymbol.classList.add('fa-sun');
 
   // On change l'image en dark
-  avatarImage.src = './public/assets/images/Dark_560x560_v02.png';
-  profilImage.src = './public/assets/images/Dark_Mounir_560x560.png';
+  avatarImages.forEach(image => {
+    image.src = './public/assets/images/Dark_560x560.png';
+  });
+  profilImages.forEach(image => {
+    image.src = './public/assets/images/Dark_Mounir_560x560_v02.png';
+  });
+
 }
 
 // Fonction delet mode sombre
@@ -38,6 +46,8 @@ function disableDarkMode() {
   navElement.classList.remove('dark-mode');
   footerElement.classList.remove('dark-mode');
   bgProjects.classList.remove('dark-mode');
+
+  document.querySelector("#home").classList.remove('dark-mode');
 
   cardos.forEach(cardo => {
     cardo.classList.remove('dark-mode');
@@ -50,8 +60,13 @@ function disableDarkMode() {
   faSymbol.classList.add('fa-moon');
 
   // On change l'image en light
-  avatarImage.src = './public/assets/images/Light_560x560.png';
-  profilImage.src = './public/assets/images/Light_Mounir_560x560.png';
+  avatarImages.forEach(image => {
+    image.src = './public/assets/images/Light_560x560.png';
+  });
+  profilImages.forEach(image => {
+    image.src = './public/assets/images/Light_Mounir_560x560_v02.png';
+  });
+
 }
 
 // Fonction switch

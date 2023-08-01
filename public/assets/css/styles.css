@@ -536,10 +536,26 @@ body.dark-mode {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/BG_PC_TEST.jpg");
+    background-image: url("../images/background-home-desktop_blur50.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
+}
+
+#home.dark-mode {
+    background-image: url("../images/background-home-desktop_dark_blur50.png");
+}
+
+/* Taille BG HOME*/
+
+@media (max-width: 767px) {
+
+    /* Styles pour téléphone */
+    #home {
+        background-image: url("../images/background-home-phone.jpg");
+        background-size: cover;
+        background-position:bottom;
+    }
 }
 
 #about {
@@ -572,11 +588,16 @@ body.dark-mode {
     top: 0;
     left: 0;
     opacity: 0;
-    transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.2s ease-in-out;
 }
 
 .img-container:hover .img-overlay {
     opacity: 1;
+}
+
+.img-container:hover .img-default {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
 }
 
 .lead {
