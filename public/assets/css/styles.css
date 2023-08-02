@@ -80,9 +80,10 @@ html {
 
 
 /* DARK MODE */
+
 body {
-    background-color: white;
-    color: #212529;
+    background-color: rgb(250, 252, 255);
+    color: #2E346E;
 }
 
 body.dark-mode {
@@ -101,7 +102,7 @@ body.dark-mode {
 }
 
 #projects {
-    background-color: #EBEBEB;
+    background-color: #cbd6ff;
 }
 
 #projects.dark-mode {
@@ -109,7 +110,7 @@ body.dark-mode {
 }
 
 .BG a {
-    color: #333;
+    color: #2E346E;
 }
 
 .BG.dark-mode a {
@@ -117,14 +118,20 @@ body.dark-mode {
 }
 
 .BG {
-    background-color: rgba(248, 249, 250, 0.4);
+    background-color: rgba(250, 252, 255, 0.7);
     padding: 0 0.5rem;
 }
 
 .BG.dark-mode {
-    background-color: rgba(29, 29, 29, 0.4);
+    background-color: rgba(51, 51, 51, 0.6);
 }
 
+.navbar-light .navbar-nav .nav-link{
+    color: #2E346E;
+}
+.navbar-dark .navbar-nav .nav-link {
+    color: #fff;
+}
 
 #darkModeButton {
     margin: 0 1rem;
@@ -197,8 +204,12 @@ body.dark-mode {
 
     /* Styles pour téléphone */
     #home {
-        background-image: url("../images/background-home-phone.jpg");
-        background-size: cover;
+        background-image: url("../images/background-home-phone_blur50.png");
+        background-position: bottom;
+    }
+
+    #home.dark-mode {
+        background-image: url("../images/background-home-phone_dark_blur50.png");
         background-position: bottom;
     }
 }
@@ -246,7 +257,21 @@ body.dark-mode {
 }
 
 .lead {
-    text-decoration: underline;
+    font-weight: bold;
+}
+
+.btn-projets{
+    background-color: #5879C6;
+    border: 1px solid #C5DAF7;
+    color: #C5DAF7;
+    font-weight: bold;
+}
+
+.btn-linkedin{
+    background-color: #43559F;
+    border: 1px solid #C5DAF7;
+    color: #C5DAF7;
+    font-weight: bold;
 }
 
 /* SKILLS-BOX */
@@ -268,23 +293,23 @@ body.dark-mode {
 }
 
 .item-bleu:hover {
-    color: rgb(0, 102, 255);
+    color: rgb(50, 163, 255);
 }
 
 .item-violet:hover {
-    color: rgb(74, 6, 119);
+    color: rgb(150, 22, 255);
 }
 
 .item-orange:hover {
-    color: orange;
+    color: rgb(255, 177, 33);
 }
 
 .item-vert:hover {
-    color: rgb(0, 173, 0);
+    color: rgb(113, 255, 30);
 }
 
 .item-jaune:hover {
-    color: rgb(255, 251, 0);
+    color: rgb(255, 251, 39);
 }
 
 /* ABOUT SUR TEL */
@@ -372,9 +397,9 @@ body.dark-mode {
     overflow: hidden;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
-    color: #333;
+    color: #2E346E;
     transition: height 0.3s;
-    overflow-y: auto;
+    overflow-y: hidden;
 
     min-width: 100%;
     font-size: 0.8em;
@@ -383,6 +408,7 @@ body.dark-mode {
 
 .item-project:hover .overlay {
     height: 100%;
+    overflow-y: auto;
 }
 
 .tags li {
