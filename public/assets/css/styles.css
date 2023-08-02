@@ -147,40 +147,6 @@ body.dark-mode {
     z-index: 100;
 }
 
-/* BOUTON UP */
-
-.scroll-top-button-container {
-    position: fixed;
-    bottom: 3rem;
-    right: 2rem;
-}
-
-.scroll-top-button {
-    border-radius: 50%;
-    width: 50px;
-    height: 50px;
-    padding: 0;
-    font-size: 24px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* background-color: #ff0000; */
-}
-
-@media (max-width: 465px) {
-    .scroll-top-button {
-        border-radius: 50%;
-        width: 33px;
-        height: 33px;
-        padding: 0;
-        font-size: 20px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        /* background-color: #ff0000; */
-    }
-}
-
 /* DEFILEMENT UPDATE HOME */
 
 #home {
@@ -260,17 +226,17 @@ body.dark-mode {
     font-weight: bold;
 }
 
-.btn-projets{
+.btn-projets, .btn-CV{
     background-color: #5879C6;
     border: 1px solid #C5DAF7;
-    color: #C5DAF7;
+    color: white;
     font-weight: bold;
 }
 
-.btn-linkedin{
+.btn-linkedin, .btn-meet{
     background-color: #43559F;
     border: 1px solid #C5DAF7;
-    color: #C5DAF7;
+    color: white;
     font-weight: bold;
 }
 
@@ -373,6 +339,15 @@ body.dark-mode {
 
 /* Réalisations en ligne */
 
+.aGit{
+    font-size: 3rem;
+    color: #2E346E;
+}
+
+.aGit.dark-mode{
+    color: white;
+}
+
 .item-project {
     margin: 1rem;
     background-color: white;
@@ -417,7 +392,7 @@ body.dark-mode {
     display: inline-block;
     padding: 5px;
     margin: 5px;
-    background-color: #FFB8B8;
+    background-color: #5879C6;
     border-radius: 5px;
     color: white;
 }
@@ -437,7 +412,119 @@ body.dark-mode {
 
 .aMore {
     font-size: 0.6rem !important;
-    background-color: #2FDC9C;
-    border-color: #73f7c6;
+    background-color: #43559F;
+    border-color: #C5DAF7;
     color: white;
+}
+
+/* CONTACT */
+
+#contact{
+    padding: 2rem;
+}
+
+.outer-container {
+    max-width: 85%;
+    margin: auto;
+    text-align: center;
+}
+
+.contact-subtitle{
+    margin-bottom: 2rem;
+}
+
+/* .section-title{
+    padding-bottom: 2rem;
+} */
+
+.space-between .item {
+    display: inline-block;
+    margin: 0.5rem 0;
+    font-weight: bold;
+}
+
+.space-between.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-box {
+    width: 100%;
+    text-align: center;
+    border-radius: 20px;
+    /* min-width: 30vh; */
+}
+
+.contact-box i {
+    font-size: 3rem;
+    padding: 0.5rem 0;
+}
+
+.phone {
+    background-color: #43559F;
+    border: 1px solid #C5DAF7;
+    color: #bed9ff;
+}
+
+.email {
+    background-color: #d7f0ff;
+    border: 1px solid #4c77c5;
+    color: #4c77c5;
+}
+
+.email a{
+    color: #4c77c5!important;
+}
+
+.meet {
+    background-color: #5879C6;
+    border: 1px solid #C5DAF7;
+    color: #C5DAF7;
+}
+
+.item.contact-box {
+    flex: 1;
+    max-width: 30%;
+}
+
+.meet .text{
+    margin-top: 1rem;
+}
+
+@media (min-width: 1105px) {
+    .contact-box .text {
+        font-size: 0.9rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1104px) {
+    .contact-box .text {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 991px) {
+    .contact-box .text {
+        font-size: 1.3rem;
+    }
+
+    .item.contact-box {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .email .text{
+        color: red;
+        display: none;
+    }
+}
+
+.contact-box .fas  {
+    line-height: unset;
+}
+
+.contact-box .text  {
+    margin-bottom: 0.8em;
 }

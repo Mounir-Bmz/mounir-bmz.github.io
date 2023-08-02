@@ -3,10 +3,11 @@ const darkModeButton = document.getElementById('darkModeButton');
 const navElement = document.querySelector("nav.BG");
 const footerElement = document.querySelector("footer.BG");
 
+const aGitElement = document.querySelector(".aGit");
 const faSymbol = document.querySelector(".faSymbol");
-const cardos = document.querySelectorAll(".item-project");
 const bgProjects = document.querySelector("#projects");
 
+const cardos = document.querySelectorAll(".item-project");
 const avatarImages = document.querySelectorAll('.img-fluid');
 const profilImages = document.querySelectorAll('.img-overlay');
 
@@ -19,6 +20,7 @@ function enableDarkMode() {
   navElement.classList.add('dark-mode');
   footerElement.classList.add('dark-mode');
   bgProjects.classList.add('dark-mode');
+  aGitElement.classList.add('dark-mode');
 
   cardos.forEach(cardo => {
     cardo.classList.add('dark-mode');
@@ -46,6 +48,7 @@ function disableDarkMode() {
   navElement.classList.remove('dark-mode');
   footerElement.classList.remove('dark-mode');
   bgProjects.classList.remove('dark-mode');
+  aGitElement.classList.remove('dark-mode');
 
   document.querySelector("#home").classList.remove('dark-mode');
 

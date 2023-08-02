@@ -7,11 +7,12 @@
   <meta name="author" content="Mounir Boumaza">
   <title>Mon Portfolio</title>
   <meta name="description"
-    content="En recherche active à Paris (stage) - Poste de développeur ou intégrateur. WordPress, PHP, MySQL, webdesign, CSS/HTML, JavaScript...">
+    content="En recherche active à Paris (stage) - Poste de développeur ou intégrateur. WordPress, PHP, MySQL, webdesign, CSS/HTML, JavaScript ...">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
   <link rel="stylesheet" href="./public/assets/css/styles.css">
 </head>
 
@@ -42,11 +43,13 @@
             <a class="nav-link" href="#projects">Projets</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="./public/pages/resume.html">Mon CV</a>
+            <a class="nav-link" href="#contact">Contact</a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link" href="mailto:mounir.boumaza.dev@gmail.com">Contact</a>
+            <a class="nav-link" href="./public/pages/resume.html">CV</a>
           </li>
+
         </ul>
       </div>
     </div>
@@ -70,8 +73,7 @@
           </div>
           <div class="col-lg-6 mx-auto">
             <div class="box-btn">
-              <a href="https://github.com/Mounir-Bmz?tab=repositories" target="_blank"
-                class="btn btn-projets btn-lg px-4">Mes projets</a>
+              <a href="#projects" class="btn btn-projets btn-lg px-4">Mes projets</a>
               <a href="https://www.linkedin.com/in/mounir-boumaza/" target="_blank"
                 class="btn btn-linkedin btn-lg px-4">Linkedin</a>
             </div>
@@ -180,7 +182,8 @@
                 significative à tout projet que j'entreprends.
               </p>
               <p>
-                Doté d'une nature <strong>autonome</strong>, je suis <strong>à l'aise tant dans le travail individuel que dans la
+                Doté d'une nature <strong>autonome</strong>, je suis <strong>à l'aise tant dans le travail individuel
+                  que dans la
                   collaboration</strong> en groupe. Lorsqu'on me donne la liberté d'exprimer mes idées, je n'hésite pas
                 à faire des propositions constructives afin d'améliorer et d'optimiser les projets au maximum.
               </p>
@@ -199,12 +202,14 @@
         <div class="box-btn mt-4 mb-4">
           <div class="row">
             <div class="col-md-12 d-flex justify-content-center">
+
               <a href="#contact">
-                <button class="btn btn-outline-primary btn-lg">
+                <button class="btn btn-meet btn-lg">
                   Me contacter
                 </button>
               </a>
-              <a href="./public/pages/resume.html" class="btn btn-primary btn-lg">Afficher mon CV</a>
+
+              <a href="./public/pages/resume.html" class="btn btn-CV btn-lg">Afficher mon CV</a>
             </div>
           </div>
         </div>
@@ -214,10 +219,15 @@
     <section id="projects" class="">
       <div class="container py-5">
         <h2 class="section-title text-center my-2">Mes projets en ligne</h2>
+
+        <div class="d-flex justify-content-center align-items-center">
+          <a href="https://github.com/Mounir-Bmz" target="_blank" class="aGit"><i class="fab fa-github"></i></a>
+        </div>
+
         <div class="row d-flex justify-content-between">
 
           <div class="cardo col-md-6">
-            <div class="item-project" id="cetolike">
+            <div class="item-project" id="">
               <div class="image-box"></div>
               <div class="overlay">
                 <div class="text">
@@ -225,10 +235,10 @@
                     <h4 class="font-weight-bold">Lorem ipsum</h4>
                   </div>
                   <ul class="tags">
-                    <li>WordPress</li>
-                    <li>PHP</li>
+                    <li>React</li>
+                    <li>HTML</li>
                     <li>JavaScript</li>
-                    <li>mySQL</li>
+                    <li>CSS</li>
                   </ul>
                   <ul class="desc">
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -252,7 +262,7 @@
           </div>
 
           <div class="cardo col-md-6">
-            <div class="item-project" id="nature-vie">
+            <div class="item-project" id="">
               <div class="image-box"></div>
               <div class="overlay">
                 <div class="text">
@@ -260,7 +270,6 @@
                     <h4 class="font-weight-bold">Maecenas quis</h4>
                   </div>
                   <ul class="tags">
-                    <li>Magento</li>
                     <li>PHP</li>
                     <li>JavaScript</li>
                     <li>mySQL</li>
@@ -287,7 +296,7 @@
           </div>
 
           <div class="cardo col-md-6">
-            <div class="item-project" id="iselection">
+            <div class="item-project" id="">
               <div class="image-box"></div>
               <div class="overlay">
                 <div class="text">
@@ -298,10 +307,7 @@
                     <li>WordPress</li>
                     <li>PHP</li>
                     <li>JavaScript</li>
-                    <li>cURL</li>
-                    <li>CRON</li>
                     <li>mySQL</li>
-                    <li>less</li>
                   </ul>
                   <ul class="desc">
                     <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</li>
@@ -325,7 +331,7 @@
           </div>
 
           <div class="cardo col-md-6">
-            <div class="item-project" id="detoxssentiel">
+            <div class="item-project" id="">
               <div class="image-box"></div>
               <div class="overlay">
                 <div class="text">
@@ -357,6 +363,40 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact">
+      <div class="outer-container">
+        <h2 class="section-title">Contactez-moi !</h2>
+
+        <div class="contact-subtitle">
+          Actuellement à la recherche d'un stage à partir de <time datetime="2023-09">Septembre 2023</time>, je suis
+          intéressée par les postes de :<br>
+          <br>
+          <div class="jobs">
+            <b>Développeur Full-stack • Développeur Front-end • Intégrateur web</b>
+          </div>
+        </div>
+
+        <div class="space-between row">
+          <div class="item contact-box phone col-3 d-flex flex-column">
+            <i class="fas fa-phone"></i>
+            <div class="text">+33 6 20 52 27 88</div>
+          </div>
+          <div class="item contact-box email col-3 d-flex flex-column">
+            <a href="mailto:mounir.boumaza.dev@gmail.com">
+              <i class="fas fa-envelope"></i>
+            </a>
+            <div class="text">
+              mounir.boumaza.dev@gmail.com
+            </div>
+          </div>
+          <div class="item contact-box meet col-3 d-flex flex-column">
+            <div class="text">Vous souhaitez me rencontrer ?</div>
+            <p>Je suis disponible à Paris et ses alentours</p>
           </div>
         </div>
       </div>

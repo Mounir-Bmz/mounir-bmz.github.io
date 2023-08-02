@@ -12,17 +12,19 @@ window.addEventListener('DOMContentLoaded', function () {
     }
   }
 
-  // Au chargement initial de la page
-  updateBox2Class();
-
   // Écouteur d'événement pour redimensionner la fenêtre
   window.addEventListener('resize', function () {
     updateBox2Class();
+    updateCardoClasses();
+    updateContactBoxClasses();
   });
+
+  // Appel initial pour mettre à jour la classe de box2
+  updateBox2Class();
+
 });
 
 /////////////////////
-
 
 // ABOUT CHANGEMENT TEL (CARD projects)
 function updateCardoClasses() {
@@ -38,8 +40,20 @@ function updateCardoClasses() {
   });
 }
 
-// Au chargement initial de la page
-updateCardoClasses();
-
 // Écouteur d'événement pour redimensionner la fenêtre
 window.addEventListener('resize', updateCardoClasses);
+
+
+// CONTACT CHANGEMENT TEL (item contact-box)
+function updateContactBoxClasses() {
+  const contactBoxes = document.querySelectorAll('.contact-box');
+  contactBoxes.forEach(contactBox => {
+    if (window.innerWidth <= 991) {
+      contactBox.classList.remove('col-3');
+      contactBox.classList.add('col-12');
+    } else {
+      contactBox.classList.remove('col-12');
+      contactBox.classList.add('col-3');
+    }
+  });
+}
