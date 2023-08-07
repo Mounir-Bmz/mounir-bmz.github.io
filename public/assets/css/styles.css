@@ -337,7 +337,7 @@ body.dark-mode {
     margin-top: 1.8rem;
 }
 
-/* Réalisations en ligne */
+/* Réalisations en ligne PROJETS */
 
 .aGit{
     font-size: 3rem;
@@ -361,6 +361,11 @@ body.dark-mode {
     background-image: url('../images/BG_PC_TEST.jpg');
     background-size: cover;
     border-radius: 20px;
+}
+
+.image-box.poke_data{
+    background-image: url('../images/poke_data_home.jpeg');
+    background-size: contain;
 }
 
 .overlay {
