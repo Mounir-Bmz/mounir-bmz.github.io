@@ -36,6 +36,10 @@ html {
     scroll-behavior: smooth;
 }
 
+.nav-item{
+    margin: 0 0.5rem;
+}
+
 /* Taille Mounir Boumaza Accueil*/
 
 @media (max-width: 767px) {
@@ -83,7 +87,7 @@ html {
 
 body {
     background-color: rgb(250, 252, 255);
-    color: #2E346E;
+    color: #080942;
 }
 
 body.dark-mode {
@@ -110,7 +114,7 @@ body.dark-mode {
 }
 
 .BG a {
-    color: #2E346E;
+    color: #080942;
 }
 
 .BG.dark-mode a {
@@ -119,7 +123,7 @@ body.dark-mode {
 
 .BG {
     background-color: rgba(250, 252, 255, 0.7);
-    padding: 0 0.5rem;
+    /* padding: 0 0.5rem; */
 }
 
 .BG.dark-mode {
@@ -127,7 +131,7 @@ body.dark-mode {
 }
 
 .navbar-light .navbar-nav .nav-link{
-    color: #2E346E;
+    color: #080942;
 }
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
@@ -339,9 +343,14 @@ body.dark-mode {
 
 /* Réalisations en ligne PROJETS */
 
+.container.py-5{
+    padding-top: 4em!important;
+}
+
 .aGit{
     font-size: 3rem;
-    color: #2E346E;
+    color: #080942;
+    margin: 0 1rem;
 }
 
 .aGit.dark-mode{
@@ -377,7 +386,7 @@ body.dark-mode {
     overflow: hidden;
     border-radius: 10px;
     background-color: rgb(255, 255, 255);
-    color: #2E346E;
+    color: #080942;
     transition: height 0.3s;
     overflow-y: hidden;
 
@@ -416,7 +425,7 @@ body.dark-mode {
 }
 
 .aMore {
-    font-size: 0.6rem !important;
+    font-size: 0.8rem !important;
     background-color: #43559F;
     border-color: #C5DAF7;
     color: white;
