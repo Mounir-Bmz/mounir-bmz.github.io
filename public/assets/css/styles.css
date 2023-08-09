@@ -389,6 +389,11 @@ body.dark-mode {
     background-size: contain;
 }
 
+.image-box.currency_converter {
+    background-image: url('../images/converter_screen_01.png');
+    background-size: contain;
+}
+
 .overlay {
     position: absolute;
     bottom: 0;
@@ -458,10 +463,6 @@ body.dark-mode {
 .contact-subtitle {
     margin-bottom: 2rem;
 }
-
-/* .section-title{
-    padding-bottom: 2rem;
-} */
 
 .space-between .item {
     display: inline-block;
