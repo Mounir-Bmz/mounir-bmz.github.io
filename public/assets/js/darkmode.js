@@ -16,6 +16,8 @@ function enableDarkMode() {
   document.body.classList.add('dark-mode');
 
   document.querySelector("#home").classList.add('dark-mode');
+  document.querySelector(".copy-home").classList.add('dark-mode');
+  
 
   navElement.classList.add('dark-mode');
   footerElement.classList.add('dark-mode');
@@ -51,6 +53,7 @@ function disableDarkMode() {
   aGitElement.classList.remove('dark-mode');
 
   document.querySelector("#home").classList.remove('dark-mode');
+  document.querySelector(".copy-home").classList.remove('dark-mode');
 
   cardos.forEach(cardo => {
     cardo.classList.remove('dark-mode');

@@ -36,7 +36,7 @@ html {
     scroll-behavior: smooth;
 }
 
-.nav-item{
+.nav-item {
     margin: 0 0.5rem;
 }
 
@@ -107,6 +107,7 @@ body.dark-mode {
 
 #projects {
     background-color: #cbd6ff;
+    min-height: 100vh;
 }
 
 #projects.dark-mode {
@@ -130,9 +131,10 @@ body.dark-mode {
     background-color: rgba(51, 51, 51, 0.6);
 }
 
-.navbar-light .navbar-nav .nav-link{
+.navbar-light .navbar-nav .nav-link {
     color: #080942;
 }
+
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
 }
@@ -153,19 +155,29 @@ body.dark-mode {
 
 /* DEFILEMENT UPDATE HOME */
 
-#home {
+#home, .copy-home {
     min-height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-image: url("../images/background-home-desktop_blur50.png");
+    background-image: url("../images/background-home-desktop_blur50_anim.png");
     background-size: cover;
-    background-position: center;
+    background-position: right center;
     background-attachment: fixed;
+    animation: moveBackground 70s linear infinite; /* Durée */
 }
 
-#home.dark-mode {
-    background-image: url("../images/background-home-desktop_dark_blur50.png");
+@keyframes moveBackground {
+    0% {
+        background-position: left; /* Position de départ à droite */
+    }
+    100% {
+        background-position: right; /* Position finale à gauche */
+    }
+}
+
+#home.dark-mode, .copy-home.dark-mode {
+    background-image: url("../images/background-home-desktop_dark_blur50_anim.png");
 }
 
 /* Taille BG HOME*/
@@ -173,14 +185,16 @@ body.dark-mode {
 @media (max-width: 767px) {
 
     /* Styles pour téléphone */
-    #home {
+    #home, .copy-home {
         background-image: url("../images/background-home-phone_blur50.png");
         background-position: bottom;
+        animation-play-state: paused;
     }
 
-    #home.dark-mode {
+    #home.dark-mode, .copy-home.dark-mode {
         background-image: url("../images/background-home-phone_dark_blur50.png");
         background-position: bottom;
+        animation-play-state: paused;
     }
 }
 
@@ -189,10 +203,6 @@ body.dark-mode {
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-#projects {
-    min-height: 100vh;
 }
 
 .img-container {
@@ -230,14 +240,16 @@ body.dark-mode {
     font-weight: bold;
 }
 
-.btn-projets, .btn-CV{
+.btn-projets,
+.btn-CV {
     background-color: #5879C6;
     border: 1px solid #C5DAF7;
     color: white;
     font-weight: bold;
 }
 
-.btn-linkedin, .btn-meet{
+.btn-linkedin,
+.btn-meet {
     background-color: #43559F;
     border: 1px solid #C5DAF7;
     color: white;
@@ -343,17 +355,17 @@ body.dark-mode {
 
 /* Réalisations en ligne PROJETS */
 
-.container.py-5{
-    padding-top: 4em!important;
+.container.py-5 {
+    padding-top: 4em !important;
 }
 
-.aGit{
+.aGit {
     font-size: 3rem;
     color: #080942;
     margin: 0 1rem;
 }
 
-.aGit.dark-mode{
+.aGit.dark-mode {
     color: white;
 }
 
@@ -372,7 +384,7 @@ body.dark-mode {
     border-radius: 20px;
 }
 
-.image-box.poke_data{
+.image-box.poke_data {
     background-image: url('../images/poke_data_home.jpeg');
     background-size: contain;
 }
@@ -433,7 +445,7 @@ body.dark-mode {
 
 /* CONTACT */
 
-#contact{
+#contact {
     padding: 2rem;
 }
 
@@ -443,7 +455,7 @@ body.dark-mode {
     text-align: center;
 }
 
-.contact-subtitle{
+.contact-subtitle {
     margin-bottom: 2rem;
 }
 
@@ -486,8 +498,8 @@ body.dark-mode {
     color: #4c77c5;
 }
 
-.email a{
-    color: #4c77c5!important;
+.email a {
+    color: #4c77c5 !important;
 }
 
 .meet {
@@ -501,7 +513,7 @@ body.dark-mode {
     max-width: 30%;
 }
 
-.meet .text{
+.meet .text {
     margin-top: 1rem;
 }
 
@@ -529,16 +541,16 @@ body.dark-mode {
 }
 
 @media (max-width: 480px) {
-    .email .text{
+    .email .text {
         color: red;
         display: none;
     }
 }
 
-.contact-box .fas  {
+.contact-box .fas {
     line-height: unset;
 }
 
-.contact-box .text  {
+.contact-box .text {
     margin-bottom: 0.8em;
 }
