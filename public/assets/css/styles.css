@@ -488,24 +488,34 @@ body.dark-mode {
 
 .phone {
     background-color: #43559F;
+    background-image: url("../images/contact-me-phone.png");
+    background-size: cover;
+    background-position: right center;
     border: 1px solid #C5DAF7;
-    color: #bed9ff;
+    color: #ffffff;
 }
 
 .email {
-    background-color: #d7f0ff;
-    border: 1px solid #4c77c5;
-    color: #4c77c5;
+    background-color: #5879C6;
+    border: 1px solid #C5DAF7;
+    color: #dcebff;
 }
 
 .email a {
-    color: #4c77c5 !important;
+    color: #dcebff !important;
+}
+
+.email a:hover {
+    color: #ffffff !important;
 }
 
 .meet {
     background-color: #5879C6;
+    background-image: url("../images/contact-me-map.png");
+    background-size: cover;
+    background-position: right center;
     border: 1px solid #C5DAF7;
-    color: #C5DAF7;
+    color: #ffffff;
 }
 
 .item.contact-box {
