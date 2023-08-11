@@ -394,6 +394,11 @@ body.dark-mode {
     background-size: contain;
 }
 
+.image-box.justCookIt {
+    background-image: url('../images/JustCookIt.png');
+    background-size: contain;
+}
+
 .overlay {
     position: absolute;
     bottom: 0;
