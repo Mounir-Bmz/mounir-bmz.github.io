@@ -124,7 +124,6 @@ body.dark-mode {
 
 .BG {
     background-color: rgba(250, 252, 255, 0.7);
-    /* padding: 0 0.5rem; */
 }
 
 .BG.dark-mode {
@@ -144,6 +143,10 @@ body.dark-mode {
     padding: 0.2rem 0.4rem;
 }
 
+.navbar {
+    transition: background-color 0.3s ease-in-out;
+}
+
 /* NAV BAR FIX */
 
 .navbar.sticky {
@@ -155,7 +158,8 @@ body.dark-mode {
 
 /* DEFILEMENT UPDATE HOME */
 
-#home, .copy-home {
+#home,
+.copy-home {
     min-height: 100vh;
     display: flex;
     justify-content: center;
@@ -164,19 +168,24 @@ body.dark-mode {
     background-size: cover;
     background-position: right center;
     background-attachment: fixed;
-    animation: moveBackground 70s linear infinite; /* Durée */
+    animation: moveBackground 70s linear infinite;
+    /* Durée */
 }
 
 @keyframes moveBackground {
     0% {
-        background-position: left; /* Position de départ à droite */
+        background-position: left;
+        /* Position de départ à droite */
     }
+
     100% {
-        background-position: right; /* Position finale à gauche */
+        background-position: right;
+        /* Position finale à gauche */
     }
 }
 
-#home.dark-mode, .copy-home.dark-mode {
+#home.dark-mode,
+.copy-home.dark-mode {
     background-image: url("../images/background-home-desktop_dark_blur50_anim.png");
 }
 
@@ -185,13 +194,15 @@ body.dark-mode {
 @media (max-width: 767px) {
 
     /* Styles pour téléphone */
-    #home, .copy-home {
+    #home,
+    .copy-home {
         background-image: url("../images/background-home-phone_blur50.png");
         background-position: bottom;
         animation-play-state: paused;
     }
 
-    #home.dark-mode, .copy-home.dark-mode {
+    #home.dark-mode,
+    .copy-home.dark-mode {
         background-image: url("../images/background-home-phone_dark_blur50.png");
         background-position: bottom;
         animation-play-state: paused;
@@ -262,6 +273,7 @@ body.dark-mode {
     display: block;
     font-size: 3rem;
     margin-bottom: 1rem;
+    transition: transform 0.2s ease-in-out;
 }
 
 .skills {
@@ -271,6 +283,16 @@ body.dark-mode {
 @media (max-width: 767px) {
     .skill-box i {
         font-size: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+    .item-bleu:hover i,
+    .item-violet:hover i,
+    .item-orange:hover i,
+    .item-vert:hover i,
+    .item-jaune:hover i {
+        transform: scale(1.3);
     }
 }
 
