@@ -277,7 +277,7 @@ body.dark-mode {
 }
 
 .skills {
-    margin-top: 5rem;
+    margin: 5rem 3rem 0 3rem;
 }
 
 @media (max-width: 767px) {
@@ -287,6 +287,7 @@ body.dark-mode {
 }
 
 @media (min-width: 768px) {
+
     .item-bleu:hover i,
     .item-violet:hover i,
     .item-orange:hover i,
@@ -408,17 +409,57 @@ body.dark-mode {
 
 .image-box.poke_data {
     background-image: url('../images/poke_data_home.jpeg');
-    background-size: contain;
+    background-size: cover;
+    background-position: right center;
 }
 
 .image-box.currency_converter {
-    background-image: url('../images/converter_screen_01.png');
-    background-size: contain;
+    background-image: url('../images/converter_home.png');
+    background-size: cover;
+    background-position: center;
 }
 
 .image-box.justCookIt {
-    background-image: url('../images/JustCookIt.png');
-    background-size: contain;
+    background-image: url('../images/JustCookIt_home.png');
+    background-size: cover;
+    background-position: center;
+    ;
+}
+
+.image-box.poudlock {
+    background-image: url('../images/poudlock_home.png');
+    background-size: cover;
+    background-position: center;
+}
+
+/* CORRECTIONS BOX PROJETS */
+
+@media (min-width: 1200px) {
+    .container {
+        max-width: 1400px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1199px){
+    .container {
+        max-width: 1200px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767px){
+    .container {
+        max-width: 800px;
+    }
+}
+
+@media (max-width: 460px){
+    .image-box {
+        height: 18vh;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+    }
 }
 
 .overlay {
@@ -473,6 +514,7 @@ body.dark-mode {
     background-color: #43559F;
     border-color: #C5DAF7;
     color: white;
+    margin: 0 0.7rem;
 }
 
 /* CONTACT */
