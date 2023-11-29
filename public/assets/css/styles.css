@@ -438,6 +438,12 @@ body.dark-mode {
     background-position: center;
 }
 
+.image-box.mounir-bmz-art {
+    background-image: url('../images/mounir-bmz-art.png');
+    background-size: cover;
+    background-position: center;
+}
+
 /* CORRECTIONS BOX PROJETS */
 
 @media (min-width: 1200px) {
