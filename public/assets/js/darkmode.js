@@ -35,13 +35,12 @@ function enableDarkMode() {
   faSymbol.classList.add('fa-sun');
 
   // On change l'image en dark
-  avatarImages.forEach(image => {
-    image.src = './public/assets/images/Dark_560x560.png';
-  });
   profilImages.forEach(image => {
     image.src = './public/assets/images/Light_Mounir_560x560_v03.png'; // Pour l'instant, je change pas l'image en dark
   });
-
+  avatarImages.forEach(image => {
+    image.src = './public/assets/images/Dark_560x560.png';
+  });
 }
 
 // Fonction delet mode sombre
@@ -66,13 +65,12 @@ function disableDarkMode() {
   faSymbol.classList.add('fa-moon');
 
   // On change l'image en light
-  avatarImages.forEach(image => {
-    image.src = './public/assets/images/Light_560x560.png';
-  });
   profilImages.forEach(image => {
     image.src = './public/assets/images/Light_Mounir_560x560_v03.png';
   });
-
+  avatarImages.forEach(image => {
+    image.src = './public/assets/images/Light_560x560.png';
+  });
 }
 
 // Fonction switch
