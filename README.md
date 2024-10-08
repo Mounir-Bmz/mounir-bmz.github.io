@@ -7,3 +7,4 @@ Je suis Mounir Boumaza, et en tant que développeur passionné, j’adore travai
 [https://mounir-bmz.github.io/](https://mounir-bmz.github.io/)
 
 [Contact me!](mailto:mounir.boumaza.dev@gmail.com)
+mounir.boumaza.dev@gmail.com
