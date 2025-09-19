@@ -1,0 +1,136 @@
+// src/assets/styles/About.scss
+.about {
+  min-height: 100vh;
+  position: relative;
+  background-color: aliceblue !important; /* Ensure base color applies */
+
+  &.dark-mode {
+    background-color: #333 !important; /* Force dark mode color */
+    color: #fff;
+  }
+
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+
+    h2 {
+      text-align: center;
+      font-size: 2rem;
+      font-weight: bold;
+      margin-bottom: 2rem;
+    }
+
+    .main-infos {
+      display: flex;
+      gap: 2rem;
+
+      .left {
+        flex: 0 0 30%; /* 30% width on desktop */
+
+        img {
+          width: 100%;
+          height: auto;
+          border-radius: 10px;
+          margin-bottom: 1rem;
+        }
+
+        .info {
+          p {
+            margin: 0.5rem 0;
+            font-size: 1.1rem;
+
+            strong {
+              color: #080942;
+            }
+          }
+
+          &.dark-mode strong {
+            color: #fff;
+          }
+        }
+      }
+
+      .right {
+        flex: 1; /* 70% width on desktop */
+
+        .description {
+          p {
+            font-size: 1rem;
+            line-height: 1.6;
+            margin: 0.5rem 0;
+          }
+        }
+      }
+    }
+
+    .footer-like {
+      width: 100%;
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid #ccc;
+      margin-top: 2rem;
+
+      &.dark-mode {
+        border-top: 1px solid #666;
+      }
+
+      .buttons {
+        .btn {
+          display: inline-block;
+          margin: 0.5rem;
+          padding: 0.75rem 1.5rem;
+          text-decoration: none;
+          color: #080942;
+          background-color: #c5daf7;
+          border-radius: 5px;
+
+          &:hover {
+            text-decoration: underline;
+          }
+
+          &.dark-mode {
+            color: #fff;
+            background-color: #43559f;
+          }
+        }
+      }
+    }
+  }
+
+  /* Mobile responsive */
+  @media (max-width: 768px) {
+    .container .main-infos {
+      flex-direction: column; /* Stack vertically */
+
+      .left {
+        flex: none; /* Full width on mobile */
+        display: flex;
+        flex-direction: row; /* Photo left, info right in upper block */
+        align-items: center;
+        gap: 1rem;
+
+        img {
+          flex: 0 0 40%; /* Photo 40% width */
+          max-width: 150px;
+        }
+
+        .info {
+          flex: 1;
+          p {
+            margin: 0.25rem 0;
+            font-size: 1rem;
+          }
+        }
+      }
+
+      .right {
+        order: 2; /* Main text below upper block */
+      }
+    }
+
+    .container .footer-like {
+      padding-top: 1rem;
+    }
+  }
+}

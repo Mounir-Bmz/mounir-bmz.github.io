@@ -1,0 +1,48 @@
+@import '@fortawesome/fontawesome-free/css/all.min.css';
+@import './assets/styles/Navbar.scss';
+@import './assets/styles/Home.scss';
+@import './assets/styles/About.scss';
+@import './assets/styles/Projects.scss';
+@import './assets/styles/Contact.scss';
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, 'sans-serif';
+  background-image: url('/assets/images/background-home-desktop_blur50_anim.png');
+  background-size: cover;
+  background-position: right center;
+  background-attachment: fixed;
+  animation: moveBackground 70s linear infinite;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &.dark-mode {
+    background-image: url('/assets/images/background-home-desktop_dark_blur50_anim.png');
+  }
+}
+section {
+  min-height: 100vh;
+  padding-top: 5rem;
+}
+
+@media (max-width: 768px) {
+  body {
+    background-image: url('/assets/images/background-home-phone_blur50.png');
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Reverted to fixed */
+    animation: none;
+
+    &.dark-mode {
+      background-image: url('/assets/images/background-home-phone_dark_blur50.png');
+    }
+  }
+}
+
+@keyframes moveBackground {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
