@@ -1,31 +1,40 @@
+// src/components/Projects.jsx
+import { useContext } from 'react';
+import { ThemeContext } from '../contexts/ThemeContext';
 import '../assets/styles/Projects.scss';
 
 const Projects = () => {
+  const { isDarkMode } = useContext(ThemeContext);
+
   const projects = [
     {
       title: 'Ankama - MadLab Animation',
-      tech: ['JavaScript', 'Python', 'Toon Boom Harmony', 'Kitsu'],
-      description:
-        'Projet d\'automatisation pour optimiser le workflow de production chez Ankama. Développement de scripts pour automatiser des tâches répétitives et intégrer Toon Boom Harmony avec le pipeline Kitsu.',
-      details: [
-        'Automatisation des paramétrages de scènes dans Toon Boom Harmony.',
-        'Optimisation de l\'intégration des décors et des animations.',
-        'Gestion du pipeline avec Kitsu pour suivre la production en temps réel.',
-      ],
+      image: '/assets/images/ankama_home.png',
       link: '#',
     },
-    // Add other projects (Art Portfolio, Trip O'dvisor, etc.) similarly
-    // For brevity, adding just one more
     {
       title: 'Trip O\'dvisor',
-      tech: ['JavaScript', 'HTML', 'CSS'],
-      description:
-        'Site web de conseils touristiques utilisant Javascript (vanilla).',
-      details: [
-        'Changement de thème : sombre/clair avec stockage local.',
-        'Choix de couleur de thème : rouge, bleu, vert.',
-        'Slider d\'images et gestion des commentaires.',
-      ],
+      image: '/assets/images/tripodvisor_home.png',
+      link: '#',
+    },
+    {
+      title: 'Art Portfolio',
+      image: '/assets/images/mounir-bmz-art_home.png',
+      link: '#',
+    },
+    {
+      title: 'Pokedex',
+      image: '/assets/images/poke_data_home.jpeg',
+      link: '#',
+    },
+    {
+      title: 'Poudlock',
+      image: '/assets/images/poudlock_home.png',
+      link: '#',
+    },
+    {
+      title: 'JustCookIt',
+      image: '/assets/images/JustCookIt_home.png',
       link: '#',
     },
   ];
@@ -34,23 +43,16 @@ const Projects = () => {
     <section id="projects" className="projects">
       <div className="container">
         <h2>Mes projets en ligne</h2>
-        <div className="project-grid">
+        <div className="masonry-grid">
           {projects.map((project, index) => (
-            <div key={index} className="project-card">
-              <h3>{project.title}</h3>
-              <div className="tech">
-                {project.tech.map((tech, i) => (
-                  <span key={i}>{tech}</span>
-                ))}
-              </div>
-              <p>{project.description}</p>
-              <ul>
-                {project.details.map((detail, i) => (
-                  <li key={i}>{detail}</li>
-                ))}
-              </ul>
-              <a href={project.link} className="btn">
-                Voir le projet
+            <div key={index} className="masonry-item">
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <div className="project-card">
+                  <img src={project.image} alt={project.title} />
+                  <div className="overlay">
+                    <h3>{project.title}</h3>
+                  </div>
+                </div>
               </a>
             </div>
           ))}
