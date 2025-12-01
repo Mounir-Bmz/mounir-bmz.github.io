@@ -4,63 +4,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mounir Boumaza - Développeur Full-Stack | Intégrateur Hubspot | Paris</title>
+  <meta name="description" content="Développeur Full-Stack (React, JavaScript, PHP, MySQL). Portfolio avec projets concrets, démos live et code source.">
   <meta name="author" content="Mounir Boumaza">
-  <title>Mon Portfolio</title>
-  <meta name="description"
-    content="En recherche active à Paris (stage) - Poste de développeur ou intégrateur. WordPress, PHP, MySQL, webdesign, CSS/HTML, JavaScript ...">
+  <meta name="keywords" content="développeur full-stack, React, JavaScript, PHP, Paris, portfolio, Hubspot">
+
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Mounir Boumaza - Développeur Full-Stack">
+  <meta property="og:description" content="Portfolio professionnel – React, JS, PHP, projets concrets">
+  <meta property="og:image" content="https://mounir-bmz.github.io/public/assets/images/Light_560x560.png">
+  <meta property="og:url" content="https://mounir-bmz.github.io">
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-
   <link rel="stylesheet" href="./public/assets/css/styles.css">
 </head>
 
-<header>
-  <nav class="navbar navbar-expand-lg navbar-light BG sticky bg-transparent">
-    <div class="container-fluid d-flex justify-content-center align-items-center">
-      <h1 class="navbar-brand mr-auto my-2"><a href="./index.html">Mounir Boumaza</a></h1>
-
-      <button id="darkModeButton" class="btn btn-secondary">
-        <i class="faSymbol fas fa-moon"></i>
-      </button>
-
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-
-      <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
-        <ul class="navbar-nav ml-auto justify-content-center text-center font-weight-bold">
-          <li class="nav-item">
-            <a class="nav-link" href="#home"><i class="fas fa-home"></i> Accueil </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#about"><i class="far fa-user"></i> À propos </a>
-          </li>
-          <li class="nav-item">
-            <!-- <a class="nav-link" href="https://github.com/Mounir-Bmz?tab=repositories" target="_blank">Projets</a> -->
-            <a class="nav-link" href="#projects"><i class="fas fa-globe"></i> Projets </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#contact"><i class="fas fa-envelope"></i> Contact </a>
-          </li>
-
-          <li class="nav-item">
-            <!--<a class="nav-link" href="./public/pages/resume.html"><i class="far fa-file-pdf"></i> CV </a>-->
-            <a class="nav-link" href="https://drive.google.com/file/d/1CdVvvaA287TZLPsVWSepQLrH-0D8Wq58/view?usp=drive_link" target="_blank"><i class="far fa-file-pdf"></i> CV </a>
-          </li>
-
-        </ul>
-      </div>
-    </div>
-  </nav>
-</header>
-
 <body>
-  <main aria-label="Content">
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-light BG sticky bg-transparent" aria-label="Navigation principale">
+      <div class="container-fluid d-flex justify-content-center align-items-center">
+        <h1 class="navbar-brand mr-auto my-2"><a href="./index.html">Mounir Boumaza</a></h1>
 
-    <div class="" id="home">
+        <!-- Bouton Dark Mode -->
+        <button id="darkModeButton" class="btn btn-secondary" aria-label="Activer/désactiver le mode sombre">
+          <i class="faSymbol fas fa-moon" aria-hidden="true"></i>
+          <span class="sr-only">Mode sombre</span>
+        </button>
+
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Afficher/masquer le menu">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse justify-content-center text-center" id="navbarNav">
+          <ul class="navbar-nav ml-auto justify-content-center text-center font-weight-bold">
+            <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+            <li class="nav-item"><a class="nav-link" href="#about">À propos</a></li>
+            <li class="nav-item"><a class="nav-link" href="#projects">Projets</a></li>
+            <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="https://drive.google.com/file/d/1CdVvvaA287TZLPsVWSepQLrH-0D8Wq58/view?usp=drive_link" target="_blank" rel="noopener">
+                CV
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main aria-label="Contenu principal">
+
+    <!-- HOME -->
+    <div id="home">
       <div class="home container mainContent">
         <div class="py-3 my-auto text-center">
           <div class="mt-4 mb-5 containerMounir">
@@ -68,54 +69,49 @@
             <br>
             <h1 class="display-5 fw-bold text-uppercase">Développeur web full-stack</h1>
             <br><br>
-            <!-- <h2 class="lead mb-4">Je suis à la recherche d'un stage (420h) à partir de <time
-                datetime="2023-09">Septembre 2023</time>.</h2> -->
           </div>
           <div class="col-lg-6 mx-auto">
             <div class="box-btn">
               <a href="#projects" class="btn btn-projets btn-lg px-4">Mes projets</a>
-              <a href="https://www.linkedin.com/in/mounir-boumaza/" target="_blank"
-                class="btn btn-linkedin btn-lg px-4">Linkedin</a>
+              <a href="https://www.linkedin.com/in/mounir-boumaza/" target="_blank" rel="noopener" class="btn btn-linkedin btn-lg px-4">Linkedin</a>
             </div>
           </div>
         </div>
 
         <div class="row justify-content-between skills">
           <div class="item-bleu skill-box animate__animated animate__fadeInUp text-center">
-            <i class="fas fa-code"></i>
+            <i class="fas fa-code" aria-hidden="true"></i>
             <strong>Front-end</strong>
           </div>
           <div class="item-violet skill-box animate__animated animate__fadeInUp text-center">
-            <i class="fas fa-database"></i>
+            <i class="fas fa-database" aria-hidden="true"></i>
             <strong>Back-end</strong>
           </div>
           <div class="item-orange skill-box animate__animated animate__fadeInUp text-center">
-            <i class="fas fa-mobile-alt"></i>
+            <i class="fas fa-mobile-alt" aria-hidden="true"></i>
             <strong>Mobile</strong>
           </div>
           <div class="item-vert skill-box animate__animated animate__fadeInUp text-center">
-            <i class="fas fa-pencil-ruler"></i>
+            <i class="fas fa-pencil-ruler" aria-hidden="true"></i>
             <strong>Web Design</strong>
           </div>
           <div class="item-jaune skill-box animate__animated animate__fadeInUp text-center">
-            <i class="fas fa-globe"></i>
+            <i class="fas fa-globe" aria-hidden="true"></i>
             <strong>Anglais</strong>
           </div>
         </div>
-
       </div>
     </div>
 
+    <!-- ABOUT -->
     <section id="about">
       <div class="container container-about">
         <div class="main-infos row">
           <div class="col-4 item box1">
             <div class="img-container">
-              <img src="./public/assets/images/Light_Mounir_560x560_v03.png" alt="Photo de profil de Mounir Boumaza" width="100%"
-                class="img-fluid img-default" />
+              <img src="./public/assets/images/Light_Mounir_560x560_v03.png" alt="Photo de profil de Mounir Boumaza" width="100%" class="img-fluid img-default"/>
 
-              <img src="./public/assets/images/Light_560x560.png" alt="Avatar de Mounir Boumaza"
-                width="100%" class="img-overlay" />                
+              <img src="./public/assets/images/Light_560x560.png" alt="Avatar stylisé de Mounir Boumaza" width="100%" class="img-overlay"/>                
             </div>
             <div class="infos">
               <dl>
@@ -135,16 +131,12 @@
           </div>
 
           <div class="col-8 item box2">
-
             <div class="box3">
               <div class="img-container">
-                <img src="./public/assets/images/Light_Mounir_560x560_v03.png" alt="Photo de profil de Mounir Boumaza" width="100%"
-                  class="img-fluid img-default" />
+                <img src="./public/assets/images/Light_Mounir_560x560_v03.png" alt="Photo de profil de Mounir Boumaza" width="100%" class="img-fluid img-default" />
                   
-                <img src="./public/assets/images/Light_560x560.png" alt="Avatar de Mounir Boumaza"
-                  width="100%" class="img-overlay" />
+                <img src="./public/assets/images/Light_560x560.png" alt="Avatar de Mounir Boumaza" width="100%" class="img-overlay" />
               </div>
-
             </div>
 
             <h2>À propos de moi</h2>
@@ -163,96 +155,77 @@
             </div>
 
             <blockquote class="text-justify">
-              <p>
-                <!--En tant que développeur passionné, j'ai à cœur d'explorer les défis passionnants du monde du
-                développement web et de m'épanouir <strong>au sein d'une équipe dynamique et collaborative</strong>. Ma
-                passion pour l'innovation et mon sens de l'analyse me permettent de proposer des solutions
-                <strong>créatives et originales</strong> pour répondre aux besoins d'un projet.-->
-
-                <strong>Développeur web passionné</strong>, je cherche un <strong>poste en CDI</strong> pour continuer à relever des défis techniques 
-                stimulants et grandir <strong>au sein d'une équipe collaborative et ambitieuse.</strong>
-              </p>
-              <p>
-                <!--Ma <strong>spécialisation en React</strong> et mes compétences approfondies en <strong>JavaScript, HTML,
-                  CSS et PHP</strong> font de moi un développeur <strong>polyvalent et efficace</strong>, capable de
-                mener à bien des projets variés et ambitieux.-->
-
-                <strong>Mes compétences principales sont en React, JavaScript, HTML, CSS et PHP</strong>, 
-                ce qui me rend <strong>polyvalent et capable de m'adapter</strong> 
-                à différents projets web, que ce soit front-end ou back-end. J’ai eu l’occasion de développer des applications de bout en bout, 
-                en cherchant toujours l'innovation et l'efficacité.
-              </p>
-              <p>
-                Avant de me consacrer au développement web, j'ai eu l'occasion de <strong>travailler en équipe</strong>
-                sur des productions de séries et films d'animation pour des clients. Ces années d'expérience m'ont
-                permis de <strong>maîtriser parfaitement le travail en équipe, la gestion des deadlines et les
-                  retakes</strong> (retours d'amélioration). J'ai également pu mettre en pratique ces compétences dans
-                des projets de développement web en équipe, obtenant ainsi des retours positifs et des résultats
-                concrets. Cette expérience m'a préparé à relever de nouveaux défis et à apporter une valeur ajoutée
-                significative à tout projet que j'entreprends.
-              </p>
-              <p>
-                Doté d'une nature <strong>autonome</strong>, je suis <strong>à l'aise tant dans le travail individuel
-                  que dans la
-                  collaboration</strong> en groupe. Lorsqu'on me donne la liberté d'exprimer mes idées, je n'hésite pas
-                à faire des propositions constructives afin d'améliorer et d'optimiser les projets au maximum.
-              </p>
-              <p>
-                <!-- <strong>Je suis actuellement à la recherche d'un CDI pour un poste de Developpeur Web Full stack à partir de <time
-                    datetime="2024-10">Octobre 2024</time>.</strong> -->
-
-                <!--N'hésitez pas à me contacter pour toute opportunité professionnelle ou pour en savoir plus sur mes
-                réalisations et mes projets. Je suis enthousiaste à l'idée de contribuer au succès de votre équipe et de
-                participer à des projets passionnants. -->
-
-                Ouvert à de nouvelles opportunités, n’hésitez pas à me contacter pour discuter de collaborations possibles 
-                ou en savoir plus sur mes projets. Je suis enthousiaste à l'idée de contribuer au succès de votre équipe 
-                et d'explorer des projets motivants.
-              </p>
+              <div class="about-text">
+                <p>
+                  <strong>Développeur web passionné</strong>, je cherche un <strong>poste en CDI</strong> pour continuer à relever des défis techniques 
+                  stimulants et grandir <strong>au sein d'une équipe collaborative et ambitieuse.</strong>
+                </p>
+                <p>
+                  <strong>Mes compétences principales sont en React, JavaScript, HTML, CSS et PHP</strong>, 
+                  ce qui me rend <strong>polyvalent et capable de m'adapter</strong> 
+                  à différents projets web, que ce soit front-end ou back-end. J’ai eu l’occasion de développer des applications de bout en bout, 
+                  en cherchant toujours l'innovation et l'efficacité.
+                </p>
+                <p>
+                  Avant de me consacrer au développement web, j'ai eu l'occasion de <strong>travailler en équipe</strong>
+                  sur des productions de séries et films d'animation pour des clients. Ces années d'expérience m'ont
+                  permis de <strong>maîtriser parfaitement le travail en équipe, la gestion des deadlines et les
+                    retakes</strong> (retours d'amélioration). J'ai également pu mettre en pratique ces compétences dans
+                  des projets de développement web en équipe, obtenant ainsi des retours positifs et des résultats
+                  concrets. Cette expérience m'a préparé à relever de nouveaux défis et à apporter une valeur ajoutée
+                  significative à tout projet que j'entreprends.
+                </p>
+                <p>
+                  Doté d'une nature <strong>autonome</strong>, je suis <strong>à l'aise tant dans le travail individuel
+                    que dans la
+                    collaboration</strong> en groupe. Lorsqu'on me donne la liberté d'exprimer mes idées, je n'hésite pas
+                  à faire des propositions constructives afin d'améliorer et d'optimiser les projets au maximum.
+                </p>
+                <p>
+                  Ouvert à de nouvelles opportunités, n’hésitez pas à me contacter pour discuter de collaborations possibles 
+                  ou en savoir plus sur mes projets. Je suis enthousiaste à l'idée de contribuer au succès de votre équipe 
+                  et d'explorer des projets motivants.
+                </p>
+              </div>
             </blockquote>
           </div>
-
         </div>
 
         <div class="box-btn mt-4 mb-4">
           <div class="row">
             <div class="col-md-12 d-flex justify-content-center">
-
               <a href="#contact">
                 <button class="btn btn-meet btn-lg">
                   Me contacter
                 </button>
               </a>
-
-              <!--<a href="./public/pages/resume.html" class="btn btn-CV btn-lg" target="_blank">Afficher mon CV</a>-->
-              <a href="https://drive.google.com/file/d/1CdVvvaA287TZLPsVWSepQLrH-0D8Wq58/view?usp=drive_link" class="btn btn-CV btn-lg" target="_blank">Afficher mon CV</a>
-              
+              <a href="https://drive.google.com/file/d/1CdVvvaA287TZLPsVWSepQLrH-0D8Wq58/view?usp=drive_link" target="_blank" rel="noopener" class="btn btn-CV btn-lg">Afficher mon CV</a>
             </div>
           </div>
         </div>
       </div>
     </section>
 
+    <!-- PROJETS -->
     <section id="projects" class="copy-home">
       <div class="container py-5">
-
         <div class="d-flex justify-content-center align-items-center">
           <h2 class="section-title text-center my-2">Mes projets en ligne</h2>
-          <a href="https://github.com/Mounir-Bmz?tab=repositories" target="_blank" class="aGit"><i
-              class="fab fa-github"></i></a>
+          <a href="https://github.com/Mounir-Bmz?tab=repositories" target="_blank" rel="noopener" class="aGit" aria-label="Voir tous mes dépôts GitHub">
+            <i class="fab fa-github" aria-hidden="true"></i>
+          </a>
         </div>
 
         <div class="row d-flex justify-content-between">
 
+          <!-- Projet 1 -->
           <div class="cardo col-md-6">
-            <div class="item-project" id="">
-              <div class="image-box ankama-automation"></div>
+            <div class="item-project">
+              <div class="image-box ankama-automation" role="img" aria-label="Projet Ankama Automation"></div>
               <div class="overlay">
                 <div class="text">
                   <div class="text-title text-center">
-                    <h4 class="font-weight-bold">
-                      <a href="https://github.com/Mounir-Bmz/Ankama-Automatisation" target="_blank" class="text-dark">Ankama - MadLab Animation <i class="fab fa-github"></i></a>
-                    </h4>
+                    <h3 class="font-weight-bold text-dark">Ankama - MadLab Animation</h3>
                   </div>
                   <ul class="tags">
                     <li>JavaScript</li>
@@ -269,7 +242,7 @@
                   </ul>
                   <div class="d-flex justify-content-center mt-3">
                     <a href="https://github.com/Mounir-Bmz/Ankama-Automatisation" target="_blank" class="btn text-uppercase aMore">
-                      Voir le projet <i class="fas fa-angle-right ml-2"></i>
+                      Code source <i class="fas fa-angle-right ml-2"></i>
                     </a>
                   </div>
                 </div>
@@ -277,22 +250,19 @@
             </div>
           </div>
 
-
+          <!-- Projet 2 - Art Portfolio -->
           <div class="cardo col-md-6">
-            <div class="item-project" id="">
-              <div class="image-box mounir-bmz-art"></div>
+            <div class="item-project">
+              <div class="image-box mounir-bmz-art" role="img" aria-label="Portfolio artistique"></div>
               <div class="overlay">
                 <div class="text">
                   <div class="text-title text-center">
-                    <h4 class="font-weight-bold">
-                      <a href="https://mounir-bmz-art.vercel.app/" target="_blank" class="text-dark">Art Portfolio <i
-                          class="fas fa-chevron-circle-right"></i></a>
-                    </h4>
+                    <h3 class="font-weight-bold text-dark">Art Portfolio</h3>
                   </div>
                   <ul class="tags">
                     <li>HTML</li>
                     <li>CSS</li>
-                    <li>Javascript</li>
+                    <li>JavaScript</li>
                     <li>jQuery</li>
                   </ul>
                   <ul class="desc">
@@ -307,14 +277,13 @@
                       Instagram, ajoutant ainsi une touche dynamique au portfolio.</li>
                   </ul>
                   <div class="d-flex justify-content-center mt-3">
-                    <a href="https://mounir-bmz-art.vercel.app/" target="_blank" class="btn text-uppercase aMore">
-                      Voir le site
+                    <a href="https://mounir-bmz-art.vercel.app/" target="_blank" rel="noopener" class="btn text-uppercase aMore">
+                      Voir le site live
                       <i class="fas fa-angle-right ml-2"></i>
                     </a>
 
-                    <a href="https://github.com/Mounir-Bmz/mounir-bmz-art" target="_blank"
-                      class="btn text-uppercase aMore">
-                      Voir le projet
+                    <a href="https://github.com/Mounir-Bmz/mounir-bmz-art" target="_blank" rel="noopener" class="btn text-uppercase aMore">
+                      Code source
                       <i class="fas fa-angle-right ml-2"></i>
                     </a>
                   </div>
@@ -323,16 +292,14 @@
             </div>
           </div>
 
+          <!-- Trip O'dvisor -->
           <div class="cardo col-md-6">
-            <div class="item-project" id="">
-              <div class="image-box tripodvisor"></div>
+            <div class="item-project">
+              <div class="image-box tripodvisor" role="img" aria-label="Site Trip O'dvisor"></div>
               <div class="overlay">
                 <div class="text">
                   <div class="text-title text-center">
-                    <h4 class="font-weight-bold">
-                      <a href="https://tripodvisor.vercel.app/" target="_blank" class="text-dark">Trip O'dvisor <i
-                          class="fas fa-chevron-circle-right"></i></a>
-                    </h4>
+                    <h3 class="font-weight-bold text-dark">Trip O'dvisor</h3>
                   </div>
                   <ul class="tags">
                     <li>JavaScript</li>
@@ -354,13 +321,13 @@
                   </ul>
                   <div class="d-flex justify-content-center mt-3">
                     <a href="https://tripodvisor.vercel.app/" target="_blank" class="btn text-uppercase aMore">
-                      Voir le site
+                      Voir le site live
                       <i class="fas fa-angle-right ml-2"></i>
                     </a>
 
                     <a href="https://github.com/Mounir-Bmz/tripodvisor" target="_blank"
                       class="btn text-uppercase aMore">
-                      Voir le projet
+                      Code source
                       <i class="fas fa-angle-right ml-2"></i>
                     </a>
                   </div>
@@ -375,10 +342,7 @@
               <div class="overlay">
                 <div class="text">
                   <div class="text-title text-center">
-                    <h4 class="font-weight-bold">
-                      <a href="https://github.com/Mounir-Bmz/JustCookIt" target="_blank" class="text-dark">JustCookIt <i
-                          class="fab fa-github"></i></a>
-                    </h4>
+                    <h3 class="font-weight-bold text-dark">JustCookIt</h3>
                   </div>
                   <ul class="tags">
                     <li>React</li>
@@ -400,7 +364,7 @@
                   </ul>
                   <div class="d-flex justify-content-center mt-3">
                     <a href="https://github.com/Mounir-Bmz/JustCookIt" target="_blank" class="btn text-uppercase aMore">
-                      Voir le projet
+                      Code source
                       <i class="fas fa-angle-right ml-2"></i>
                     </a>
                   </div>
@@ -415,10 +379,7 @@
               <div class="overlay">
                 <div class="text">
                   <div class="text-title text-center">
-                    <h4 class="font-weight-bold">
-                      <a href="https://github.com/Mounir-Bmz/Pokedex_data" target="_blank" class="text-dark">Pokedex
-                        (data) <i class="fab fa-github"></i></a>
-                    </h4>
+                    <h3 class="font-weight-bold text-dark">Pokedex (data)</h3>
                   </div>
                   <ul class="tags">
                     <li>PHP</li>
@@ -438,7 +399,7 @@
                   <div class="d-flex justify-content-center mt-3">
                     <a href="https://github.com/Mounir-Bmz/Pokedex_data" target="_blank"
                       class="btn text-uppercase aMore">
-                      Voir le projet <i class="fas fa-angle-right ml-2"></i>
+                      Code source <i class="fas fa-angle-right ml-2"></i>
                     </a>
                   </div>
                 </div>
@@ -452,10 +413,7 @@
               <div class="overlay">
                 <div class="text">
                   <div class="text-title text-center">
-                    <h4 class="font-weight-bold">
-                      <a href="https://poudlock.vercel.app/" target="_blank" class="text-dark">Poudlock <i
-                          class="fas fa-chevron-circle-right"></i></a>
-                    </h4>
+                    <h3 class="font-weight-bold text-dark">Poudlock</h3>
                   </div>
                   <ul class="tags">
                     <li>JavaScript</li>
@@ -472,12 +430,12 @@
                   </ul>
                   <div class="d-flex justify-content-center mt-3">
                     <a href="https://poudlock.vercel.app/" target="_blank" class="btn text-uppercase aMore">
-                      Voir le site
+                      Voir le site live
                       <i class="fas fa-angle-right ml-2"></i>
                     </a>
 
                     <a href="https://github.com/Mounir-Bmz/Poudlock" target="_blank" class="btn text-uppercase aMore">
-                      Voir le projet
+                      Code source
                       <i class="fas fa-angle-right ml-2"></i>
                     </a>
                   </div>
@@ -492,10 +450,10 @@
               <div class="overlay">
                 <div class="text">
                   <div class="text-title text-center">
-                    <h4 class="font-weight-bold">
+                    <h3 class="font-weight-bold">
                       <a href="https://github.com/Mounir-Bmz/Currency_converter" target="_blank"
                         class="text-dark">Currency Converter <i class="fab fa-github"></i></a>
-                    </h4>
+                    </h3>
                   </div>
                   <ul class="tags">
                     <li>React</li>
@@ -514,7 +472,7 @@
                   <div class="d-flex justify-content-center mt-3">
                     <a href="https://github.com/Mounir-Bmz/Currency_converter" target="_blank"
                       class="btn text-uppercase aMore">
-                      Voir le projet <i class="fas fa-angle-right ml-2"></i>
+                      Code source <i class="fas fa-angle-right ml-2"></i>
                     </a>
                   </div>
                 </div>
@@ -526,13 +484,12 @@
       </div> 
     </section>
 
+    <!-- CONTACT -->
     <section id="contact">
       <div class="outer-container">
         <h2 class="section-title">Contactez-moi !</h2>
-
         <div class="contact-subtitle">
-          <!-- Actuellement à la recherche d'un CDI à partir de <time datetime="2024-08">Octobre 2024</time>,--> Je suis 
-          intéressé par les postes de :<br>
+          Je suis intéressé par les postes de :<br><br>
           <br>
           <div class="jobs">
             <b>Développeur Full-stack • Développeur Front-end • Intégrateur web</b>
@@ -541,16 +498,14 @@
 
         <div class="space-between row">
           <div class="item contact-box phone col-3 d-flex flex-column">
-            <i class="fas fa-phone"></i>
+            <i class="fas fa-phone" aria-hidden="true"></i>
             <div class="text">+33 6 20 52 27 88</div>
           </div>
           <div class="item contact-box email col-3 d-flex flex-column">
-            <a href="mailto:mounir.boumaza.dev@gmail.com">
-              <i class="fas fa-envelope"></i>
+            <a href="mailto:mounir.boumaza.dev@gmail.com" aria-label="M'envoyer un email">
+              <i class="fas fa-envelope" aria-hidden="true"></i>
             </a>
-            <div class="text">
-              mounir.boumaza.dev@gmail.com
-            </div>
+            <div class="text">mounir.boumaza.dev@gmail.com</div>
           </div>
           <div class="item contact-box meet col-3 d-flex flex-column">
             <div class="text">Vous souhaitez me rencontrer ?</div>
@@ -561,26 +516,25 @@
     </section>
 
   </main>
-</body>
 
 <footer class="BG">
-  <div class="">
+  <div class="container">
     <div class="row">
       <div class="col-md-6">
         <p>
-          &copy; Mounir Boumaza 2024
+          &copy; Mounir Boumaza 2025
         </p>
       </div>
       <div class="col-md-6">
         <ul class="list-inline text-right justify-content-end ">
           <li class="list-inline-item">
-            <a href="https://github.com/Mounir-Bmz" target="_blank">
+            <a href="https://github.com/Mounir-Bmz" target="_blank" rel="noopener">
               <i class="fab fa-github"></i>
               GitHub
             </a>
           </li>
           <li class="list-inline-item">
-            <a href="https://www.linkedin.com/in/mounir-boumaza/" target="_blank">
+            <a href="https://www.linkedin.com/in/mounir-boumaza/" target="_blank" rel="noopener">
               <i class="fab fa-linkedin"></i>
               LinkedIn
             </a>
@@ -591,12 +545,12 @@
   </div>
 </footer>
 
-<script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script>
-<script src="./public/assets/js/darkmode.js"></script>
-<script src="./public/assets/js/col_change.js"></script>
-<script src="./public/assets/js/scrollTop_auto.js"></script>
-<script src="./public/assets/js/transparent_navbar.js"></script>
-
+  <!-- <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.bundle.min.js"></script> -->
+  <script src="./public/assets/js/darkmode.js"></script>
+  <script src="./public/assets/js/col_change.js"></script>
+  <script src="./public/assets/js/scrollTop_auto.js"></script>
+  <script src="./public/assets/js/transparent_navbar.js"></script>
+</body>
 </html>

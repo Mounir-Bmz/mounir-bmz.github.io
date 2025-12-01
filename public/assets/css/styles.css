@@ -230,6 +230,14 @@ body.dark-mode {
     margin-top: 3rem;
 }
 
+/* Corrections about WAVE */
+
+.about-text p {
+    text-align: left !important;
+}
+
+/* ////////// */
+
 .img-overlay {
     position: absolute;
     top: 0;
@@ -253,7 +261,7 @@ body.dark-mode {
 
 .btn-projets,
 .btn-CV {
-    background-color: #5879C6;
+    background-color: #112a64;
     border: 1px solid #C5DAF7;
     color: white;
     font-weight: bold;
@@ -509,7 +517,7 @@ body.dark-mode {
     display: inline-block;
     padding: 5px;
     margin: 5px;
-    background-color: #5879C6;
+    background-color: #112a64;
     border-radius: 5px;
     color: white;
 }
@@ -584,7 +592,7 @@ body.dark-mode {
 }
 
 .email {
-    background-color: #5879C6;
+    background-color: #112a64;
     border: 1px solid #C5DAF7;
     color: #dcebff;
 }
@@ -598,7 +606,7 @@ body.dark-mode {
 }
 
 .meet {
-    background-color: #5879C6;
+    background-color: #112a64;
     background-image: url("../images/contact-me-map.png");
     background-size: cover;
     background-position: right center;
